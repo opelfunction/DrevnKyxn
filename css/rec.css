@@ -1,0 +1,266 @@
+header {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  width: 1863px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* стили для навигационной панели */
+nav {
+text-align: center;
+background-color: #fff;
+font-size: 18px;
+margin-top: 20px;
+margin-bottom: 20px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+border-radius: 5px;
+padding: 0;
+margin: 0 auto;
+}
+
+nav ul {
+margin: 0;
+padding: 0;
+list-style: none;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+nav li {
+margin: 0 20px;
+}
+
+nav a {
+display: block;
+padding: 10px 20px;
+color: #333;
+text-decoration: none;
+border-radius: 5px;
+transition: background-color 0.2s ease;
+}
+
+nav a:hover {
+background-color: #333;
+color: #fff;
+}
+
+/* стили для основного содержимого */
+main {
+  padding: 20px;
+  flex: 1;
+}
+
+/* стили для изображения */
+img {
+max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0;
+  width: 650px;
+  margin-left: 180px;
+}
+
+/* стили для заголовков и текста */
+h1, h2 {
+  color: black;
+  text-align: left;
+  font-size: 22px;
+}
+
+.p {
+  margin: 0 0 20px;
+  line-height: 1.5;
+  flex-direction: column;
+  color: black;
+  width: 350px;
+  font-size: 20px;
+}
+
+/* стили для footer */
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background-color: black;
+  padding: 1rem;
+  text-align: center;
+  color:white;
+  height: 13px; /* здесь нужно указать нужную высоту footer */
+  flex-shrink: 0;
+  font-size: 18px;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Verdana', sans-serif;
+}
+
+.vlad {
+  margin-left: 120px;
+}
+
+body {
+  opacity: 0;
+  animation: fade-in 1s ease-in-out forwards;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.nav,
+.main,
+.footer {
+  transform: translateX(-50px);
+  animation: slide-in 0.5s ease-in-out forwards;
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateX(-50px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes example-animation {
+  0% {
+    z-index: 1;
+  }
+  49% {
+    z-index: 1;
+  }
+  50% {
+    z-index: -1;
+  }
+  100% {
+    z-index: -1;
+  }
+}
+/* Стили для настольных компьютеров */
+@media only screen and (min-width: 1024px) {
+  /* Добавьте стили для настольных компьютеров здесь */
+  .vlad {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+/* Стили для планшетов */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  /* Добавьте стили для планшетов здесь */
+  .vlad {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* Стили для мобильных устройств */
+@media only screen and (max-width: 767px) {
+  /* Добавьте стили для мобильных устройств здесь */
+  .vlad {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@keyframes fly-in {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.dish-container {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 50px;
+  margin-left: 1px;
+}
+
+.dish-image {
+display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.dish-text {
+  flex: 2;
+  margin-left: 100px;
+}
+img.frame {
+  border: 4px;
+  padding: 2px;
+border-radius: 50px;
+}
+body {
+  opacity: 0;
+  animation: fade-in 1s ease-in-out forwards;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.nav,
+.main,
+.footer {
+  transform: translateX(-50px);
+  animation: slide-in 0.5s ease-in-out forwards;
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateX(-50px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+.dish-container {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 50px;
+  margin-left: 1px;
+  animation: fly-in 0.5s ease-in-out forwards;
+}
+}
+img.frame {
+  border: 4px;
+  padding: 2px;
+  border-radius: 50px;
+  animation: example-animation 2s infinite;
+}
+
+@keyframes example-animation {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
